@@ -1,0 +1,20 @@
+{
+  "name": "smile-test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "yassine irab <yassineirab.contact@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^16.1.0"
+  }
+}

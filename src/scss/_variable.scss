@@ -1,0 +1,66 @@
+// Import fonts
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/avenir/AvenirMedium.otf");
+}
+  
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("../fonts/avenir/AvenirRoman.otf");
+}
+
+@font-face {
+  font-family: "RasheeqBold";
+  src: url("../fonts/rasheeq/RasheeqBold.ttf");
+}
+  
+@font-face {
+  font-family: "RasheeqRegular";
+  src: url("../fonts/rasheeq/RasheeqRegular.ttf");
+}
+  
+/** Global variable **/
+  
+// Colors
+$white: #fff;
+$background-color: #FFCD4A;
+$primary-color: #0C0A0D;
+$secondary-color: #4A4A4A;
+$gray-color: #D8D8D8;
+$accent-color: #E5006E;
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto; 
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pause {
+  opacity: 0.4;
+}
+
+.play {
+  opacity: 1;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}

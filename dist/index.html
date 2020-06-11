@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="copyright" content="Yassine Irab" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  
+    <script type="text/javascript" src="../bower_components/react/react.production.min.js"></script>
+    <script type="text/javascript" src="../bower_components/react/react-dom.production.min.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+
+</head>
+
+<body>
+    <div id="main">
+
+    <!-- Header Section -->
+
+        <header id="header">
+            <!-- Container -->
+            <div class="container">
+                <div class="wraper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Logo -->
+                    <nav class="mainMenu">
+                        <!-- List Menu -->
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">accueil</a></li><li><a href="#">a propos de nous</a></li><li><a href="#">nos services</a></li><li><a href="#">partenaires</a></li><li><a href="#">médias</a></li>
+                            </ul>
+                        </div>
+                        <!-- List Menu -->
+
+                        <div class="burgerMenu">
+                            <!-- Burger Menu -->
+                            <a class="ctaContact" href="#">contact</a>
+                            <span onclick="openNav()">
+                                <label class="burger">
+                                        <div class="bun"></div>
+                                    <div class="bun"></div>
+                                            <div class="bun"></div>
+                                </label>                                
+                            </span>
+                            <!-- Burger Menu -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Container -->
+        </header>
+
+    <!-- Header Section -->
+    <div class="clearfix"></div>
+
+    <Section>
+        <div class="container">
+            <div class="wrap">
+                <main>
+                    <div class="yellowBack"></div>
+                    <div class="videoSection slideshow">
+                        <div class="video fade">
+
+                            <div class="infoVideo">
+                                <div class="videoNumbers">
+                                    <div class="numbers">
+                                        <img src="images/Path.png" alt="">
+                                        <span class="desc">01</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>       
+
+                            <video src="images/video.mp4"></video>
+
+                        </div>
+
+                        <div class="video fade">
+
+                            <div class="infoVideo">
+                                <div class="videoNumbers">
+                                    <div class="numbers">
+                                        <img src="images/Path.png" alt="">
+                                        <span class="desc">02</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>       
+
+                            <video src="images/video2.mp4"></video>
+
+                        </div> 
+
+                        <div class="video fade">
+
+                            <div class="infoVideo">
+                                <div class="videoNumbers">
+                                    <div class="numbers">
+                                        <img src="images/Path.png" alt="">
+                                        <span class="desc">03</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>       
+
+                            <video src="images/video3.mp4"></video>
+
+                        </div>                         
+
+                        <div class="controls">
+                            <div class="playBtn">
+                                <button id="play-pause"></button>
+                            </div>
+                        </div>   
+                                             
+                    </div>
+                    <div class="nextBtn" onclick="plusSlides(1)">
+                        <span class="desc">/03</span>
+                        <img src="images/nextArrow.png" alt="">
+                    </div>
+
+                </main>
+            </div>    
+        </div>
+    </Section>
+
+  
+    </div>
+    <div id="root"></div>
+
+
+
+    <script type="text/javascript" src="../dist/js/main.min.js"></script>
+    <script type="text/javascript" src="../dist/js/app.js"></script>
+</body>
+</html>
