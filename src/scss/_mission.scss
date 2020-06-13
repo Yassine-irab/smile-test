@@ -1,0 +1,162 @@
+.mission {
+    .wrap {
+        width: 100%;
+        overflow: hidden;
+        background: white;
+        .headerMission {
+            padding-left: 90px;
+            padding-top: 55px;
+            padding-bottom: 32px;            
+            @include Displayflex;
+            @media only screen and (max-width: $break-medium) {
+                display: block;
+            }  
+            @media only screen and (max-width: $break-small) {
+                padding-left: 0;
+                width: 80%;
+                margin: 0 auto;                
+            }                         
+            .titleMission {
+                width: 35%;
+                @media only screen and (max-width: $break-mSmall) {
+                    width: 100%;
+                }                  
+                h1 {
+                    font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                    font-size: 46px;
+                    font-weight: 900;
+                    color: $primary-color;
+                }
+            }
+            .descMission {
+                width: 76%;
+                padding-top: 25px;   
+                @media only screen and (max-width: $break-medium) {
+                    width: 90%;
+                }   
+                @media only screen and (max-width: $break-small) {
+                    width: 100%;              
+                }                                            
+                p {
+                    font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                    font-size: 16px;
+                    max-width: 55%;
+                    line-height: 21px;
+                    color: $primary-color;
+                    @media only screen and (max-width: $break-large) {
+                        max-width: 80%;
+                    }    
+                    @media only screen and (max-width: $break-small) {
+                        max-width: 100%;              
+                    }                                       
+                }
+            }
+        }
+        .mainMission {
+            .mainBox {
+                position: relative;
+                .img {
+                    img {
+                        position: relative;
+                        display: block;
+                        z-index: 99;
+                    }
+                }
+                .backYellow {
+                    position: absolute;
+                    bottom: 0;
+                    min-height: 372px;
+                    width: 100%;
+                    background-color: $background-color;
+                    img {
+                        position: absolute;
+                        right: 12em;
+                        top: 2em;
+                    }
+                }
+            }
+        }
+        .bottomBox {
+            position: relative;
+            .whiteBox {
+                position: relative;
+                top: -73px;
+                padding: 30px 35px;
+                background-color: #fff;
+                max-width: 73%;
+                margin-left: 17em;
+                z-index: 99;
+                @include Displayflex;
+                @media only screen and (max-width: $break-medium) {
+                    margin: 0 auto;
+                    max-width: 90%;
+                } 
+                @media only screen and (max-width: $break-small) {
+                    display: block;
+                    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.3);
+                }                                 
+                .card {
+                    margin-left: 84px;
+                    @media only screen and (max-width: $break-medium) {
+                        margin-left: 30px;
+                    } 
+                    @media only screen and (max-width: $break-small) {
+                        display: block;
+                        margin-bottom: 40px;
+                        margin-left: 0;
+                    }                                          
+                    .icon {
+                        @include BackgroundImgProp;
+                        width: 64px;
+                        height: 65px; 
+                        margin-bottom: 10px;                      
+                    }
+                    .title {
+                        margin-bottom: 18px;
+                        h1 {
+                            font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                            font-size: 26px;
+                            font-weight: 900;
+                            color: $primary-color;         
+                        }
+                    }
+                    .desc {
+                        p {
+                            font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                            font-size: 19.2px;
+                            font-weight: 100;
+                            line-height: 29px;
+                            color: #9B9B9B;     
+                            span {
+                                font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                                font-size: 29px;
+                                font-weight: 900;
+                            }                       
+                        }
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.iconUser {
+    background-image: url("../images/user.svg");
+}
+
+.iconSearch {
+    background-image: url("../images/search.svg");
+    width: 62px;
+    position: relative;
+    top: -5px;    
+}
+
+.iconGift {
+    background-image: url("../images/gift.svg");
+    width: 76px;
+    position: relative;
+    top: -5px;    
+}

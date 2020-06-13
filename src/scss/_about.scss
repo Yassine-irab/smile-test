@@ -1,0 +1,87 @@
+
+.aproposSection {
+    .wrap {
+        background-color: rgba(216,216,216,.13);
+        width: 100%;
+        display: block;
+        margin-top: 55px;        
+        .apropos {
+            @include Displayflex;
+            flex-direction: row;
+            padding: 124px 0;
+            @media only screen and (max-width: $break-large) {
+                display: block;
+            }            
+            .rightSection {
+                width: 59%;
+                position: relative;
+                top: 5px;
+                @media only screen and (max-width: $break-large) {
+                    width: 100%;
+                }
+                .path {
+                    background-image: url("../images/PathApropos.png");
+                    @include BackgroundImgProp;                 
+                    width: 335px;
+                    height: 385px;
+                    left: 13em;    
+                    @media only screen and (max-width: $break-large) {
+                        left: 15em;
+                    } 
+                    @media only screen and (max-width: $break-small) {
+                        width: 220px;
+                        left: 10em;
+                    }                                                    
+                }
+                .imgApropos {
+                    background-image: url("../images/aproposImg.png");
+                    @include BackgroundImgProp;
+                    width: 330px;
+                    height: 380px;
+                    left: 43px;  
+                    @media only screen and (max-width: $break-large) {
+                        left: 0em;
+                    } 
+                    @media only screen and (max-width: $break-small) {
+                        width: 220px;
+                    }                                                          
+                }
+            }
+            .leftSection {
+                width: 32.4%;
+                margin-top: 59px;
+                @media only screen and (max-width: $break-large) {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 59px;
+                }                
+                .bigTitle {
+                    h1 {
+                        font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                        font-size: 70px;
+                        letter-spacing: 2.4px;
+                    }
+                }
+                .title {
+                    margin-bottom: 15px;
+                    p {
+                        font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                        font-size: 30px;
+                        line-height: 25px;
+                    }
+                }
+                .description {
+                    p {
+                        font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                        font-size: 18px;
+                        line-height: 27px;                      
+                    }
+                }
+                .seeAll {
+                    @include seeAll;
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+}

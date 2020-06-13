@@ -22,6 +22,7 @@ var plumber      = require( 'gulp-plumber' );
 var options      = require( 'gulp-options' );
 var gulpif       = require( 'gulp-if' );
 var concat       = require( 'gulp-concat' );
+var imagemin     = require('gulp-imagemin');
 
 // Browsers related plugins
 var browserSync  = require('browser-Sync').create();
@@ -99,8 +100,18 @@ function js(done) {
     done();
 };
 
+function imageMin() {
+    return gulp
+        .src(imgWatch)
+        .pipe(imagemin())
+        .pipe(gulp.dest(imgURL));
+}
+
 function images(){
-    return triggerPlumber( imgSRC, imgURL );
+    return gulp
+        .src(imgWatch)
+        .pipe(imagemin())
+        .pipe(gulp.dest(imgURL));
 }
 
 function fonts(){
@@ -122,12 +133,15 @@ function watch_files() {
     gulp.watch(jsWatch, gulp.series(js, reload));
     gulp.src(jsURL + 'main.min.js')
         .pipe( notify({ message: 'Gulp is Watching' }) );
+    gulp.watch(imgWatch, images);
+    gulp.watch(fontsWatch, fonts);
+    gulp.watch(htmlWatch, html);
 }
 
 
 gulp.task("css", css);
 gulp.task("js", js);
-gulp.task("images", images);
+gulp.task("imgMinify", images);
 gulp.task("fonts", fonts);
 gulp.task("html", html);
 

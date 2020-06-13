@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +7,15 @@
     <meta name="copyright" content="Yassine Irab" />
     <meta name="keywords" content="">
     <meta name="description" content="">
-  
+    <!-- Using react minify -->
     <script type="text/javascript" src="../bower_components/react/react.production.min.js"></script>
     <script type="text/javascript" src="../bower_components/react/react-dom.production.min.js"></script>
-
+    <!-- Import minify style -->
     <link rel="stylesheet" href="../dist/css/style.min.css">
-
 </head>
-
 <body>
     <div id="main">
-
-    <!-- Header Section -->
-
+        <!-- Header Section -->
         <header id="header">
             <!-- Container -->
             <div class="container">
@@ -40,7 +35,6 @@
                             </ul>
                         </div>
                         <!-- List Menu -->
-
                         <div class="burgerMenu">
                             <!-- Burger Menu -->
                             <a class="ctaContact" href="#">contact</a>
@@ -58,83 +52,254 @@
             </div>
             <!-- Container -->
         </header>
+        <!-- Header Section -->
 
-    <!-- Header Section -->
-    <div class="clearfix"></div>
+        <!-- Clear the float -->
+        <div class="clearfix"></div>
+        <!-- Clear the float -->
 
-    <Section>
-        <div class="container">
-            <div class="wrap">
-                <main>
-                    <div class="yellowBack"></div>
-                    <div class="videoSection slideshow">
-                        <div class="video fade">
-
-                            <div class="infoVideo">
-                                <div class="videoNumbers">
-                                    <div class="numbers">
-                                        <img src="images/Path.png" alt="">
-                                        <span class="desc">01</span>
+        <!-- Articles Section: Actuality / Events-->
+        <Section class="topMain">
+            <!-- Container -->
+            <div class="container">
+                <div class="wrap">
+                    <main>
+                        <!-- background yellow -->
+                        <div class="yellowBack"></div>
+                        <!-- Section slider video -->
+                        <div class="videoSection slideshow">
+                            <!-- slider 1 -->
+                            <div class="video fade">
+                                <div class="infoVideo">
+                                    <div class="videoNumbers">
+                                        <div class="numbers">
+                                            <img src="images/Path.png" alt="">
+                                            <span class="desc">01</span>
+                                        </div>
+                                        <div class="clearfix"></div>
                                     </div>
-                                    <div class="clearfix"></div>
+                                </div>       
+                                <video src="images/video.mp4"></video>
+                            </div>
+                            <!-- slider 2 -->
+                            <div class="video fade">
+                                <div class="infoVideo">
+                                    <div class="videoNumbers">
+                                        <div class="numbers">
+                                            <img src="images/Path.png" alt="">
+                                            <span class="desc">02</span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>       
+                                <video src="images/video2.mp4"></video>
+                            </div> 
+                            <!-- slider 3 -->
+                            <div class="video fade">
+                                <div class="infoVideo">
+                                    <div class="videoNumbers">
+                                        <div class="numbers">
+                                            <img src="images/Path.png" alt="">
+                                            <span class="desc">03</span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>       
+                                <video src="images/video3.mp4"></video>
+                            </div>                         
+                            <!-- Play / Pause Button -->
+                            <div class="controls">
+                                <div class="playBtn">
+                                    <button id="play-pause"></button>
                                 </div>
-                            </div>       
+                            </div>   
+                        <!-- Section slider video -->                                     
+                        </div>
+                        <!-- Next Button video -->
+                        <div class="nextBtn" onclick="plusSlides(1)">
+                            <span class="desc">/03</span>
+                            <img src="images/nextArrow.png" alt="">
+                        </div>
+                    </main>
 
-                            <video src="images/video.mp4"></video>
-
+                    <article>
+                        <!-- Actualité Section -->
+                        <div  class="actualite">
+                            <div class="imgActualite">
+                                <!-- Actualité Image / categorie -->
+                                <a href="#">
+                                    <img src="images/students.jpg" alt="">
+                                    <span class="category">Actualité</span>
+                                </a>
+                            </div>
+                            <!-- Actualité Description -->
+                            <div class="description">
+                                <a href="#">
+                                    <h3>
+                                        Quis enim aut eum diligat quem metuat, aut eum a quo se metui putet? Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque,
+                                    </h3>
+                                </a>
+                                <!-- See more Info -->
+                                <a class="info" href="#">+ d’info<span></span></a>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                            <!-- Clear the float -->
+                            <div class="seeAll">
+                                <!-- Show all actualités -->
+                                <a href="#"><span></span>Toutes les actualités</a>
+                            </div>                        
                         </div>
 
-                        <div class="video fade">
+                        <!-- Divider Line -->
+                        <div class="lineDivider"></div>
+                        <!-- Divider Line -->
 
-                            <div class="infoVideo">
-                                <div class="videoNumbers">
-                                    <div class="numbers">
-                                        <img src="images/Path.png" alt="">
-                                        <span class="desc">02</span>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>       
-
-                            <video src="images/video2.mp4"></video>
-
-                        </div> 
-
-                        <div class="video fade">
-
-                            <div class="infoVideo">
-                                <div class="videoNumbers">
-                                    <div class="numbers">
-                                        <img src="images/Path.png" alt="">
-                                        <span class="desc">03</span>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>       
-
-                            <video src="images/video3.mp4"></video>
-
-                        </div>                         
-
-                        <div class="controls">
-                            <div class="playBtn">
-                                <button id="play-pause"></button>
+                        <!-- Events Section -->
+                        <div class="events">
+                            <!-- Title events -->
+                            <div class="title">
+                                <h1>
+                                    Events
+                                </h1>
                             </div>
-                        </div>   
-                                             
-                    </div>
-                    <div class="nextBtn" onclick="plusSlides(1)">
-                        <span class="desc">/03</span>
-                        <img src="images/nextArrow.png" alt="">
-                    </div>
+                            <!-- Date events -->
+                            <div class="dateEvents">
+                                <p><span></span>Mardi 12 Juin 2020, 11h00 - 12h00</p>
+                            </div>
+                            <!-- Events Description -->
+                            <div class="description">
+                                <a href="#">
+                                    <p>
+                                        Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque, ceciderunt quam fuerint inopes amicorum.
+                                    </p>
+                                </a>
+                                <a class="info" href="#">+ d’info<span></span></a>
+                            </div>
+                            <!-- Show all Events -->
+                            <div class="seeAll">
+                                <a href="#"><span></span>Tous les évenements</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>    
+            </div>
+        </Section>
+        <!-- Articles Section: Actuality / Events-->
 
-                </main>
-            </div>    
-        </div>
-    </Section>
+        <!-- A propos Section -->
+        <Section class="aproposSection">
+            <article>
+                <div class="wrap">
+                    <div class="container">
+                        <div class="apropos">
+                            <!-- Right side with images -->
+                            <div class="rightSection">
+                                <div class="path"></div>
+                                <div class="imgApropos"></div>
+                            </div>
+                            <!-- Left side with title and description -->
+                            <div class="leftSection">
+                                <!-- Big Title -->
+                                <div class="bigTitle">
+                                    <h1>A propos</h1>
+                                </div>
+                                <!-- title -->
+                                <div class="title">
+                                    <p>Qui sommes-nous?</p>
+                                </div>
+                                <!-- Description -->
+                                <div class="description">
+                                    <p>
+                                        Quis enim aut eum diligat quem metuat, aut eum a quo se metui putet? Coluntur tamen simulatione dumtaxat ad tempus. Quod si forte, ut fit plerumque, ceciderunt, tum intellegitur quam fuerint inopes amicorum.
+                                    </p>
+                                </div>
+                                <!-- Show more -->
+                                <div class="seeAll">
+                                    <a href="#"><span></span>En savoir plus</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </Section>
+        <!-- A propos Section -->
 
-  
+        <!-- Mission Section -->
+        <Section class="mission">
+            <article>
+                <div class="wrap">
+                    <div class="container">
+                        <div class="headerMission">
+                            <div class="titleMission">
+                                <h1>Notre mission</h1>
+                                <h1>& nos valeurs</h1>
+                            </div>
+                            <div class="descMission">
+                                <p>Quam ob rem circumspecta cautela observatum est deinceps et cum edita montium petere coeperint grassatores, loci iniquitati milites cedunt. ubi autem in planitie potuerint reperiri.</p>
+                            </div>
+                        </div>
+                        <div class="mainMission">
+                            <div class="wrap">
+                                <div class="mainBox">
+                                    <div class="img">
+                                        <img src="images/cover.png" alt="">
+                                    </div>
+                                    <div class="backYellow">
+                                        <img src="images/Pathwhite.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottomBox">
+                                    <div class="whiteBox">
+                                        <div class="card">
+                                            <div class="iconUser icon"></div>
+                                            <div class="title">
+                                                <h1>VAL1 ergoerunt <br /> dine homines </h1>
+                                            </div>
+                                            <div class="desc">
+                                                <p><span>+400</span> diffluentes audiendi, si quando de amicitia, quam nec usu</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="iconSearch icon"></div>
+                                            <div class="title">
+                                                <h1>VAL2 lorum upsum <br /> dolor dine </h1>
+                                            </div>
+                                            <div class="desc">
+                                                <p><span>60%</span> diffluentes audiendi, si quando de amicitia, quam necusu</p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="card">
+                                            <div class="iconGift icon"></div>
+                                            <div class="title">
+                                                <h1>VAL3 dolor linedine <br /> Mines sen </h1>
+                                            </div>
+                                            <div class="desc">
+                                                <p><span>+1 200</span> diffluents audiendi, si quando de amicitia tuamusu</p>
+                                            </div>                                            
+                                        </div>                                                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </article>
+        </Section>
+        <!-- Mission Section -->
+
+        <Section class="footer">
+            <div class="newsletter">
+
+            </div>
+            <footer>
+
+            </footer>
+        </Section>
+
     </div>
+
     <div id="root"></div>
 
 

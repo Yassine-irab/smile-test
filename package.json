@@ -24,6 +24,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^6.0.0",
     "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-options": "^1.1.1",
@@ -52,7 +53,11 @@
     "bb >= 10"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.10.2"
+    "@babel/runtime": "^7.10.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0"
   },
   "description": ""
 }

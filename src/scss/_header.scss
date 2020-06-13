@@ -23,6 +23,10 @@ header {
                 list-style: none;
                 text-transform: uppercase;
                 display: inline-block;
+                @media only screen and (max-width: $break-medium) {
+                    opacity: 0;
+                    visibility: hidden;
+                }                 
                 li {
                     display: inline-block;
                     a {
