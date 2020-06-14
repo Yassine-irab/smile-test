@@ -83,7 +83,7 @@ function js(done) {
         return browserify({
             entries: [jsSRC + entry]
         })
-        .transform( babelify, { presets: [ '@babel/preset-env' ] } )
+        .transform( babelify, { presets: ["@babel/preset-env","@babel/preset-react"] } )
         .bundle()
         .pipe( source( entry ) )
         .pipe( rename({
@@ -99,13 +99,6 @@ function js(done) {
     });
     done();
 };
-
-function imageMin() {
-    return gulp
-        .src(imgWatch)
-        .pipe(imagemin())
-        .pipe(gulp.dest(imgURL));
-}
 
 function images(){
     return gulp

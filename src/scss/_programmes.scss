@@ -1,0 +1,86 @@
+.programmeSection {
+    .wrap {
+        @include Displayflex;
+        overflow: hidden;
+        .sectionLeft {
+            min-width: 27%;
+            background-color: $background-color;
+            min-height: 79vh;
+            .headerTop {
+                padding: 36px 48px;
+                h1 {
+                    font-family: AvenirMedium, 'Segoe UI', sans-serif;
+                    font-size: 26px;
+                    &:last-child {
+                        font-size: 48px;
+                    }
+                }
+            }
+            .sliderSwitch {
+    
+            }
+            .seeAll {
+                @include seeAll;
+            }
+        }
+        .sectionSlider {
+            flex: 2;
+            #slider {
+                position: relative;
+                top: 61%;
+                left: -3vw;
+                transform: translateY(-50%);
+                .navigation {
+                    position: absolute;
+                    left: -10vw;
+                    top: 36%;                    
+                }
+                .view-port {
+                    overflow: hidden;
+                    .programme {
+                        @include Displayflex;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        position: relative;
+                        .sliderHolder {
+                            display:  block;
+                            min-width: 21.7vw;
+                            margin-right: 1vw;
+                            max-height: 48vh;
+                            background-color: $white;    
+                            border-bottom: 2px solid $accent-color;                            
+                            -webkit-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);
+                            -moz-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);
+                            box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);                                                 
+                            .holder {                              
+                                .imgHolder {
+                                    width: 100%;
+                                    height: auto;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .contnetHolder {
+                                    padding: 1.4vw;                        
+                                    .titleHolder {
+                                        h1 {
+                                            font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                                            font-size: 18px;
+                                            font-weight: 900;    
+                                            margin-bottom: 10px;     
+                                            text-transform: uppercase;                                   
+                                        }
+                                    }
+                                    .descHolder {
+                    
+                                    }
+                                }
+                            }                    
+                        }
+                    }                      
+                }                         
+            }
+        }
+    }
+}
