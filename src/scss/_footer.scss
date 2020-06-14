@@ -1,0 +1,70 @@
+.footer {
+    .wrap {
+        /*position: relative;
+        top: -45px;    */    
+        .newsletter {
+            width: 82%;
+            margin: 0 auto;
+            margin-bottom: 143px;
+            padding: 52px 0;
+            border-top: 1px solid $gray-color;
+            position: relative;
+            top: -47px;            
+            @include Displayflex;
+            .title {
+                font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                font-weight: 900;  
+                text-transform: capitalize; 
+                flex-grow: 1;
+                span {
+                    font-size: 27px;
+                    color: $accent-color;                 
+                }
+                h1 {
+                    font-size: 48px;
+                    color: $primary-color;
+                }
+            }
+            .input__newsletter {
+                flex-grow: 3;
+                text-align: right;
+                margin-top: 5px;
+                .input {
+                    display: inline-block;
+                    width: 80%;
+                    border: 13px solid rgba(151,151,151,0.13);
+                    border-radius: 40px;
+                    padding: 20px 40px;
+                }
+                button {
+                    font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                    font-size: 18px;
+                    display: inline-block;
+                    width: 30%;
+                    border: 0;
+                    background-color: $accent-color;
+                    padding: 30px 0;
+                    border-radius: 50px;
+                    color: #fff;
+                    margin-left: -90px;
+                    cursor: pointer;
+                }
+            }
+        }
+        footer {
+            padding: 10px 40px;
+            padding-bottom: 40px;
+            background-color: $background-color;
+            ul {
+                list-style: none;
+                li {
+                    font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    padding: 15px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

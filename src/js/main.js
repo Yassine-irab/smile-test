@@ -1,4 +1,8 @@
+import useState from 'react';
+import Modal from 'react-modal';
+
 var ReactDOM = require('react-dom');
+Modal.setAppElement('#slider');
 class Hello extends React.Component {
 
   constructor(props) {
@@ -61,6 +65,7 @@ class Hello extends React.Component {
 
   render() {
     const { error, isLoaded, items } = this.state;
+
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -70,8 +75,8 @@ class Hello extends React.Component {
 
       <div>
         <div className="navigation">
-          <button onClick={this.handlePrevious}>Previous</button>
-          <button onClick={this.handleNext}>Next</button>
+          <button className="previous" onClick={this.handlePrevious}></button>
+          <button className="next" onClick={this.handleNext}></button>
         </div>
         <div className="view-port">
           <div className="card-container" style={styles.view_port}>
@@ -89,12 +94,19 @@ class Hello extends React.Component {
                       <div className="descHolder">
                         <p>{item.body}</p>
                       </div>
+                      <div className="moreDetail">
+                        <button>Détail</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               ))}
           </div>            
           </div>
+          <Modal isOpen={false}>
+            <h2>Title</h2>
+            <p>description</p>
+          </Modal>
         </div>
       </div>
       

@@ -3,9 +3,9 @@
         @include Displayflex;
         overflow: hidden;
         .sectionLeft {
-            min-width: 27%;
+            min-width: 24.2em;
             background-color: $background-color;
-            min-height: 79vh;
+            min-height: 46.8em;
             .headerTop {
                 padding: 36px 48px;
                 h1 {
@@ -27,32 +27,49 @@
             flex: 2;
             #slider {
                 position: relative;
-                top: 61%;
-                left: -3vw;
+                top: 55%;
+                left: -3.5em;
                 transform: translateY(-50%);
                 .navigation {
                     position: absolute;
-                    left: -10vw;
-                    top: 36%;                    
+                    left: -13em;
+                    top: 17em;
+                    button {
+                        @include BackgroundImgProp;
+                        content: "";
+                        width: 56px;
+                        height: 34.73px;
+                        background-color: transparent;
+                        border: 0;
+                        cursor: pointer;
+                    }  
+                    .previous {
+                        background-image: url("../images/previousArrow.png");
+                        margin-right: 20px;
+                    }
+                    .next {
+                        background-image: url("../images/nextArrow.png");
+                    }                                    
                 }
                 .view-port {
                     overflow: hidden;
+                    padding: 20px 0;
                     .programme {
                         @include Displayflex;
                         margin: 0;
                         padding: 0;
-                        overflow: hidden;
                         position: relative;
                         .sliderHolder {
+                            position: relative;
                             display:  block;
-                            min-width: 21.7vw;
-                            margin-right: 1vw;
-                            max-height: 48vh;
+                            min-width: 417px;
+                            margin-right: 20px;
+                            /*max-height: 48vh;*/
                             background-color: $white;    
-                            border-bottom: 2px solid $accent-color;                            
-                            -webkit-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);
-                            -moz-box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);
-                            box-shadow: 0px 0px 31px -13px rgba(0,0,0,0.39);                                                 
+                            border-bottom: 2px solid $accent-color;       
+                            -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,0.19);   
+                            -moz-box-shadow: 0 2px 12px 0 rgba(0,0,0,0.19);   
+                            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.19);                                          
                             .holder {                              
                                 .imgHolder {
                                     width: 100%;
@@ -62,7 +79,7 @@
                                     }
                                 }
                                 .contnetHolder {
-                                    padding: 1.4vw;                        
+                                    padding: 25px;                       
                                     .titleHolder {
                                         h1 {
                                             font-family: AvenirRoman, 'Segoe UI', sans-serif;
@@ -73,7 +90,27 @@
                                         }
                                     }
                                     .descHolder {
-                    
+                                        p {
+                                            font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                                            font-size: 16px;
+                                            line-height: 25px;
+                                            color: $secondary-color;
+                                        }
+                                    }
+                                    .moreDetail {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        button {
+                                            font-family: AvenirRoman, 'Segoe UI', sans-serif;
+                                            font-size: 14px;
+                                            letter-spacing: 1px;
+                                            background-color: $accent-color;
+                                            border: 0;
+                                            padding: 7px 20px;
+                                            cursor: pointer;
+                                            color: $white;
+                                        }
                                     }
                                 }
                             }                    
@@ -83,4 +120,8 @@
             }
         }
     }
+}
+
+.ReactModal__Overlay {
+    z-index: 999999;
 }
