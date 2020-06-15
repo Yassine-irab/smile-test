@@ -11,7 +11,7 @@ After that, you can follow these lines to setup the environment, please make sur
 - Install the gulp command-line utility
 
 ```bash
-npm install --global gulp-CLI
+npm install --global gulp-cli
 ```
 
 - Create a package.json file in your project directory
