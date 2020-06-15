@@ -4,7 +4,7 @@ SmileTest is a Front-end challenge code that brings lots of technologies work to
 
 ## Installation
 
-Easy to use let's start with cloning the project:  ["click me"](https://github.com/Yassine-irab/smile-test.git) or from the button above.
+Easy to use let's start with cloning the project:
 
 After that, you can follow these lines to setup the environment, please make sure you have Nodejs and your server-side already installed.
 
