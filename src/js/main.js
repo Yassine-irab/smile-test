@@ -101,7 +101,7 @@ class Hello extends React.Component {
                   </div>
                 </div>
               ))}
-          </div>            
+            </div>            
           </div>
           <Modal isOpen={false}>
             <h2>Title</h2>

@@ -54,6 +54,7 @@ var fontsWatch   = './src/fonts/**/*.*';
 var htmlWatch    = './src/**/*.html';
 
 
+// browser synchronization
 function browser_sync(done) {
     browserSync.init({
         server: {
@@ -63,6 +64,7 @@ function browser_sync(done) {
     done();
 }
 
+// sass minify and converting
 function css(done) {
     gulp.src( [ styleSRC ] )
         .pipe( sourcemaps.init() )
@@ -78,6 +80,7 @@ function css(done) {
     done();
 };
 
+// js converting
 function js(done) {
     jsFiles.map( function( entry ){
         return browserify({
@@ -100,6 +103,7 @@ function js(done) {
     done();
 };
 
+// imgaes minify
 function images(){
     return gulp
         .src(imgWatch)
@@ -107,20 +111,23 @@ function images(){
         .pipe(gulp.dest(imgURL));
 }
 
+// add to destination folder
 function fonts(){
     return triggerPlumber( fontsSRC, fontsURL );
 }
-
+// add to destination folder
 function html(){
     return triggerPlumber( htmlSRC, htmlURL );
 }
 
+// add to destination folder
 function triggerPlumber( src, url ) {
     return gulp.src( src )
     .pipe( plumber() )
     .pipe( gulp.dest( url ) );
 }
 
+// watch changes for files
 function watch_files() {
     gulp.watch(styleWatch, css);
     gulp.watch(jsWatch, gulp.series(js, reload));
@@ -131,7 +138,7 @@ function watch_files() {
     gulp.watch(htmlWatch, html);
 }
 
-
+// Tasks calls
 gulp.task("css", css);
 gulp.task("js", js);
 gulp.task("imgMinify", images);

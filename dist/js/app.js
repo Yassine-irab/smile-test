@@ -1,6 +1,6 @@
 var btn = document.getElementById("play-pause");
 
-// ▬▬▬▬▬▬▬▬▬▬▬▬
+// ▬▬▬▬▬▬▬▬▬▬▬▬ Play pause Button
 
 function togglePlayPause() {
     var videos = document.querySelectorAll("video");
@@ -22,7 +22,7 @@ btn.onclick = function() {
     togglePlayPause();
 }
 
-// ▬▬▬▬▬▬▬▬▬▬▬▬
+// ▬▬▬▬▬▬▬▬▬▬▬▬ slider switch
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -46,7 +46,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
 }
 
-// ▬▬▬▬▬▬▬▬▬▬▬▬
+// ▬▬▬▬▬▬▬▬▬▬▬▬ go to top button
 
 //Get the button
 var gotTop = document.getElementById("gotTop");
