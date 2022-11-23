@@ -15,7 +15,7 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.1",
     "babelify": "^10.0.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "browserify": "^16.5.1",
     "create-react-class": "^15.6.3",
     "gulp": "^4.0.2",
